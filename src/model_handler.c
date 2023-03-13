@@ -44,20 +44,7 @@ static const uint8_t *presence_string[] = {
 	[BT_MESH_CHAT_CLI_PRESENCE_INACTIVE] = "inactive",
 };
 
-/**
- * Returns true if the specified address is an address of the local element.
- */
-static bool address_is_local(/*struct bt_mesh_model *mod,*/ uint16_t addr)
-{
-        //this method doesn't actually use mod. there is a local method for getting addresses
-        dsm_local_unicast_address_t local_addresses;
-        dsm_local_unicast_addresses_get(&local_addresses);
 
-            //there was a third check in original code from the inline function that checked own address
-    return  (addr >= local_addresses.address_start &&
-            addr < local_addresses.address_start + local_addresses.count);
-
-}
 
 /**
  * Returns true if the provided address is unicast address.
@@ -443,3 +430,34 @@ uint32_t frankenchat_init(/*bt_mesh_chat_cli * p_server, uint16_t element_index,
     return status;
 }
 
+void pingNeighbors(int ttl, uint16_t addr){
+    //send ping
+    access_model_publish_ttl_set(ttl);
+
+    //get local address
+    dsm_local_unicast_address_t local_addresses;
+    dsm_local_unicast_addresses_get(&local_addresses);
+    uint16_t local_addr = local_addresses.address_start;
+
+    uint16_t payload[2] = {addr,local_addr};
+    //create packet
+    access_message_tx_t packet =
+    {
+        .opcode = BT_MESH_CHAT_CLI_OP_PING,
+        .p_buffer = payload,
+        .length = 4,
+        .force_segmented = false,
+        .transmic_size = NRF_MESH_TRANSMIC_SIZE_DEFAULT,
+        .access_token = nrf_mesh_unique_token_get()
+    };
+    __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "send ping 0x%04x,0x%04x,\n",payload[0],payload[1]);
+
+    //send/publish the packet
+    access_model_publish(chat.model_handle, &packet);
+
+    //handle replies
+
+    //queue event to listen for replies for a bit
+    //check neighbor list for replies
+    access_model_publish_ttl_set(ACCESS_TTL_USE_DEFAULT);
+}

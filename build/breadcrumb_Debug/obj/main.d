@@ -1,5 +1,5 @@
 build/breadcrumb_Debug/obj/main.o: \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\main.c \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\main.c \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdint.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/__config \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/stdint.h \
@@ -162,9 +162,9 @@ build/breadcrumb_Debug/obj/main.o: \
  ../../common/include/nrf_mesh_config_examples.h \
  ../../common/include/ble_softdevice_support.h \
  ../../common/include/app_dtt.h ../../common/include/app_scene.h \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\model_handler.h \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\chat_cli.h \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\uwb_bread.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\model_handler.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\chat_cli.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\uwb_bread.h \
  deca_driver/include/deca_regs.h deca_driver/include/deca_version.h \
  deca_driver/include/port_platform.h deca_driver/include/deca_types.h \
  deca_driver/include/nrf_drv_spi.h C:/nrf_sdk/modules/nrfx/hal/nrf_spi.h \

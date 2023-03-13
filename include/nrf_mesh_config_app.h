@@ -196,7 +196,7 @@
  *
  * @{
  */
-#define GAP_DEVICE_NAME                 "nRF5x Mesh Light"
+#define GAP_DEVICE_NAME                 "nRF5x Breadcrumb"
 /** @} end of BLE_SOFTDEVICE_SUPPORT_CONFIG */
 
 /** @} end of NRF_MESH_CONFIG_CORE */

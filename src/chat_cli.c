@@ -36,6 +36,21 @@ static const uint8_t *extract_msg(struct net_buf_simple *buf)
 	return net_buf_simple_pull_mem(buf, buf->len);
 }
 */
+/**
+ * Returns true if the specified address is an address of the local element.
+ */
+static bool address_is_local(/*struct bt_mesh_model *mod,*/ uint16_t addr)
+{
+        //this method doesn't actually use mod. there is a local method for getting addresses
+        dsm_local_unicast_address_t local_addresses;
+        dsm_local_unicast_addresses_get(&local_addresses);
+
+            //there was a third check in original code from the inline function that checked own address
+    return  (addr >= local_addresses.address_start &&
+            addr < local_addresses.address_start + local_addresses.count);
+
+}
+
 static int handle_message(access_model_handle_t handle, const access_message_rx_t * p_message, void * p_args)
 {
     __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "handle_message\n");
@@ -130,6 +145,58 @@ static int handle_presence_get(struct bt_mesh_model *model, struct bt_mesh_msg_c
 }
 */
 
+static void handle_ping(access_model_handle_t handle, const access_message_rx_t * p_message, void * p_args){
+
+    uint16_t rx_payload[2];
+    memcpy(rx_payload,p_message->p_data, p_message->length);//p_message->length should just be 4
+
+    __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "ping to 0x%04x, from 0x%04x\n",rx_payload[0],rx_payload[1]);
+   
+    //get local addr
+    dsm_local_unicast_address_t local_addresses;
+    dsm_local_unicast_addresses_get(&local_addresses);
+    uint16_t local_addr = local_addresses.address_start;
+
+    if (rx_payload[1]==local_addr){
+        return;//don't reply to own ping
+    }
+    
+    //reply
+    if (rx_payload[0]==0xFFFF||rx_payload[0]==local_addr){
+        __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "reply to ping\n");
+
+        uint16_t tx_payload[2] = {rx_payload[1],local_addr};//TODO consider making payload a named struct
+
+        access_message_tx_t packet =
+        {
+            .opcode = BT_MESH_CHAT_CLI_OP_PING_REPLY,
+            .p_buffer = tx_payload,
+            .length = 4,
+            .force_segmented = false,
+            .transmic_size = NRF_MESH_TRANSMIC_SIZE_DEFAULT,
+            .access_token = nrf_mesh_unique_token_get()
+        };
+        //send reply
+        access_model_reply(handle, p_message, &packet);
+    }
+}
+
+static void handle_ping_reply(access_model_handle_t handle, const access_message_rx_t * p_message, void * p_args){
+    //__LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "ping reply received\n");
+    uint16_t rx_payload[2];
+    memcpy(rx_payload,p_message->p_data, p_message->length);//p_message->length should just be 4
+
+    //get local addr
+    dsm_local_unicast_address_t local_addresses;
+    dsm_local_unicast_addresses_get(&local_addresses);
+    uint16_t local_addr = local_addresses.address_start;
+
+    if (rx_payload[0]==local_addr){
+        __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "ping to 0x%04x, from 0x%04x\n",rx_payload[0],rx_payload[1]);
+    }
+}
+
+
 //FLAG: NEW STRUCT
 //dummy functions
 static void handle_private_message2(access_model_handle_t handle, const access_message_rx_t * p_message, void * p_args)
@@ -148,8 +215,8 @@ const access_opcode_handler_t m_opcode_handlers[] =
     { BT_MESH_CHAT_CLI_OP_MESSAGE,         handle_message },
     { BT_MESH_CHAT_CLI_OP_PRIVATE_MESSAGE, handle_private_message2 },
     { BT_MESH_CHAT_CLI_OP_MESSAGE_REPLY,   handle_message_reply2 },
-    { BT_MESH_CHAT_CLI_OP_PRESENCE,        handle_presence2 },
-    { BT_MESH_CHAT_CLI_OP_PRESENCE_GET,    handle_presence_get2 },
+    { BT_MESH_CHAT_CLI_OP_PING,            handle_ping },
+    { BT_MESH_CHAT_CLI_OP_PING_REPLY,      handle_ping_reply },
 };
 
 /*

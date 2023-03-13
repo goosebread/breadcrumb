@@ -1,6 +1,6 @@
 build/breadcrumb_Debug/obj/chat_cli.o: \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\chat_cli.c \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\chat_cli.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\chat_cli.c \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\chat_cli.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdint.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/__config \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/stdint.h \

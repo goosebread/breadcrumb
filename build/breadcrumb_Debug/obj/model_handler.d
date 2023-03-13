@@ -1,5 +1,5 @@
 build/breadcrumb_Debug/obj/model_handler.o: \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\model_handler.c \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\model_handler.c \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdio.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/__config \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/stdio.h \
@@ -7,7 +7,7 @@ build/breadcrumb_Debug/obj/model_handler.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/__SEGGER_RTL_ConfDefaults.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/__SEGGER_RTL_Conf.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/__SEGGER_RTL_Arm_Conf.h \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\chat_cli.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\chat_cli.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/stdint.h \
  ../../../mesh/access/api/access.h \
@@ -47,7 +47,7 @@ build/breadcrumb_Debug/obj/model_handler.o: \
  C:/nrf_sdk/components/softdevice/s132/headers/nrf_soc.h \
  C:/nrf_sdk/components/softdevice/s132/headers/nrf_error_soc.h \
  ../../../mesh/core/include/toolchain.h \
- C:\nrf_mesh\examples\myprojects\bc2_makemeshwork\src\model_handler.h \
+ C:\nrf_mesh\examples\myprojects\breadcrumb\src\model_handler.h \
  C:/Users/alexy/AppData/Local/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/libraries/libcxx/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 6.34a/include/stdlib.h \
  ../../../mesh/core/include/log.h \

@@ -188,9 +188,8 @@ static void button_event_handler(uint32_t button_number)
         state change publication due to local event. */
         case 1:
         {
-            __LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "User action \n");
-            hal_led_pin_set(ONOFF_SERVER_0_LED, !hal_led_pin_get(ONOFF_SERVER_0_LED));
-            //app_onoff_status_publish(&m_onoff_server_0);
+            //__LOG(LOG_SRC_APP, LOG_LEVEL_INFO, "User action \n");
+            pingNeighbors(2, 0xFFFF);
             break;
         }
         case 2:
@@ -351,6 +350,7 @@ static void initialize(void)
 
 #if MESH_FEATURE_GATT_ENABLED
     gap_params_init();
+    sd_ble_gap_tx_power_set(BLE_GAP_TX_POWER_ROLE_ADV,0,4);
     conn_params_init();
 #endif
 

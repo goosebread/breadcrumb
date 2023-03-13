@@ -27,7 +27,9 @@
  <Project>
   <ProjectSessionItem path="breadcrumb"/>
   <ProjectSessionItem path="breadcrumb;breadcrumb"/>
+  <ProjectSessionItem path="breadcrumb;breadcrumb;Access"/>
   <ProjectSessionItem path="breadcrumb;breadcrumb;Application"/>
+  <ProjectSessionItem path="breadcrumb;breadcrumb;Configuration Model"/>
   <ProjectSessionItem path="breadcrumb;breadcrumb;Core"/>
   <ProjectSessionItem path="breadcrumb;breadcrumb;Deca"/>
   <ProjectSessionItem path="breadcrumb;breadcrumb;nRF5 SDK"/>
@@ -71,75 +73,15 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="38" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/server/src/main.c" path="../../common/include/simple_hal.h" left="0" top="32" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../mesh/core/src/hal.c" left="0" top="117" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="188" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/include/simple_hal.h" path="../../common/src/simple_hal.c" left="0" top="188" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="69" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/src/simple_hal.c" path="C:/nrf_sdk/components/boards/pca10040.h" left="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="334" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/src/simple_hal.c" path="C:/nrf_sdk/modules/nrfx/drivers/src/nrfx_gpiote.c" left="0" top="334" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="114" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/src/ble_softdevice_support.c" left="0" top="110" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="287" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../../mesh/core/include/log.h" left="0" top="272" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="54" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/model_handler.c" path="../../../models/foundation/health/src/health_server.c" left="0" top="49" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="121" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/stack/src/mesh_stack.c" path="../../../mesh/stack/api/mesh_stack.h" left="0" top="116" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="391" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/chat_cli.c" path="../../../mesh/core/api/nrf_mesh.h" left="0" top="386" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../doc/getting_started/SES.md" left="0" top="3" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="219" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../../models/model_spec/common/src/model_config_file.c" left="0" top="214" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="127" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../../mesh/stack/src/mesh_stack.c" left="0" top="122" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="23" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../../mesh/core/src/nrf_mesh_configure.c" left="0" top="23" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="297" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/src/mesh_provisionee.c" left="0" top="294" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="470" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/chat_cli.c" path="../../../mesh/core/src/nrf_mesh.c" left="0" top="452" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="55" y="58" useTextEdit="1" openedFrom="C:/nrf_mesh/models/model_spec/common/src/model_config_file.c" path="C:/nrf_sdk/components/toolchain/cmsis/include/cmsis_gcc.h" left="0" top="58" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="89" useTextEdit="1" path="../../../models/model_spec/generic_onoff/src/generic_onoff_mc.c" left="0" top="86" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="1878" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/src/access.c" path="../../../mesh/access/src/device_state_manager.c" left="0" top="1876" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1162" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/api/access.h" path="../../../mesh/access/src/access.c" left="0" top="1160" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="324" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/src/app_onoff.c" left="0" top="322" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="12" y="240" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/chat_cli.c" path="../../../mesh/access/api/access.h" left="0" top="238" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../mesh/core/src/msg_cache.c" left="0" top="33" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../mesh/friend/src/core_tx_friend.c" left="0" top="27" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="110" useTextEdit="1" path="../../../models/model_spec/generic_dtt/include/generic_dtt_mc.h" left="0" top="88" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="55" useTextEdit="1" openedFrom="C:/nrf_mesh/models/foundation/health/src/health_server.c" path="../../../models/foundation/health/include/health_server.h" left="0" top="55" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/models/foundation/health/src/health_server.c" path="../../../models/foundation/health/include/health_opcodes.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="299" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/model_handler.c" path="src/chat_cli.c" left="0" top="285" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="229" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="src/model_handler.c" left="0" top="219" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="32" y="12651" useTextEdit="1" openedFrom="C:/nrf_mesh/external/app_timer/app_timer_mesh.c" path="include/sdk_config.h" left="0" top="12626" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="16" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/model_handler.c" path="src/model_handler.h" left="0" top="6" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="190" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/model_handler.c" path="src/chat_cli.h" left="15" top="188" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="105" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/src/access.c" path="../../../mesh/access/include/access_internal.h" left="0" top="103" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="93" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/src/device_state_manager.c" path="../../../mesh/access/api/device_state_manager.h" left="0" top="91" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="74" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/src/device_state_manager.c" path="../../../mesh/core/include/bitfield.h" left="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="48" useTextEdit="1" openedFrom="C:/nrf_mesh/models/foundation/health/src/health_server.c" path="../../../models/foundation/health/include/health_common.h" left="0" top="46" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="67" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/include/app_dtt.h" left="0" top="67" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="97" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/include/app_onoff.h" left="0" top="95" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="100" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../common/src/app_dtt.c" left="0" top="86" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="58" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/src/app_dtt.c" path="../../../models/model_spec/generic_dtt/src/generic_dtt_server.c" left="0" top="56" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="85" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/access/src/access.c" path="include/nrf_mesh_config_app.h" left="0" top="73" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="61" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/model_handler.c" path="C:/nrf_sdk/components/softdevice/s132/headers/nrf_error.h" left="0" top="59" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="10" y="188" useTextEdit="1" path="../../../models/foundation/config/src/config_server.c" left="0" top="186" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="62" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/core/include/log.h" path="../../../mesh/core/src/log.c" left="0" top="50" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="224" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/frankenchat/src/main.c" path="../../../mesh/core/api/nrf_mesh_config_core.h" left="0" top="222" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="84" y="615" useTextEdit="1" path="../../../external/rtt/src/SEGGER_RTT.c" left="22" top="615" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="73" y="489" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/src/main.c" path="C:/nrf_sdk/components/softdevice/s132/headers/nrf_soc.h" left="0" top="489" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="7" y="51" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/src/main.c" path="../../common/src/rtt_input.c" left="0" top="38" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="76" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/src/rtt_input.c" path="../../../external/app_timer/app_timer_mesh.c" left="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="399" useTextEdit="1" path="src/main.c" left="0" selected="1" top="388" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="142" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/deca_driver/port/port_platform.c" path="deca_driver/include/port_platform.h" left="0" top="127" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="192" useTextEdit="1" path="src/uwb_bread.c" left="0" top="168" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="14" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/src/uwb_bread.c" path="src/uwb_bread.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="14" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/deca_driver/deca_device.c" path="deca_driver/port/port_platform.c" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/deca_driver/port/port_platform.c" path="deca_driver/include/deca_device_api.h" left="0" top="1824" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="47" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/deca_driver/include/port_platform.h" path="deca_driver/include/nrf_drv_spi.h" left="0" top="47" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="14" useTextEdit="1" path="deca_driver/deca_range_tables.c" left="0" top="6" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="166" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/deca_driver/port/port_platform.c" path="deca_driver/nrf_drv_spi.c" left="0" top="166" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="173" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/common/src/rtt_input.c" path="C:/nrf_sdk/components/libraries/timer/app_timer.h" left="0" top="159" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="61" useTextEdit="1" openedFrom="C:/nrf_mesh/external/app_timer/app_timer_mesh.c" path="C:/nrf_sdk/components/libraries/util/sdk_common.h" left="0" top="46" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_sdk/components/libraries/util/sdk_common.h" path="C:/nrf_sdk/components/libraries/util/sdk_macros.h" left="0" top="102" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="292" useTextEdit="1" path="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 6.34a/source/thumb_crt0.s" left="0" top="277" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="10" y="976" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/src/main.c" path="deca_driver/deca_device.c" left="0" top="956" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="899" useTextEdit="1" path="../../../external/micro-ecc/asm_arm.inc" left="0" top="884" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="94" useTextEdit="1" path="../../common/src/app_error_weak.c" left="0" top="87" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="58" y="501" useTextEdit="1" openedFrom="C:/nrf_mesh/mesh/core/src/log.c" path="../../../external/rtt/src/SEGGER_RTT_printf.c" left="0" top="488" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="70" useTextEdit="1" openedFrom="C:/nrf_sdk/components/softdevice/s132/headers/nrf_soc.h" path="C:/nrf_sdk/components/softdevice/s132/headers/nrf_svc.h" left="0" top="63" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="247" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/bc2/src/uwb_bread.c" path="deca_driver/include/deca_regs.h" left="0" top="234" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="70" useTextEdit="1" path="C:/nrf_sdk/components/softdevice/common/nrf_sdh.c" left="0" top="59" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="398" useTextEdit="1" path="src/main.c" left="0" selected="1" top="373" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="0" useTextEdit="1" path="src/uwb_bread.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="441" useTextEdit="1" path="src/model_handler.c" left="0" top="428" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="191" useTextEdit="1" path="src/chat_cli.c" left="0" top="160" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/breadcrumb/src/chat_cli.c" path="src/chat_cli.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/breadcrumb/src/model_handler.c" path="src/model_handler.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/breadcrumb/src/uwb_bread.c" path="src/uwb_bread.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/breadcrumb/src/model_handler.c" path="../../../mesh/core/include/log.h" left="0" top="84" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="330" useTextEdit="1" openedFrom="C:/nrf_mesh/examples/myprojects/breadcrumb/src/chat_cli.c" path="../../../mesh/access/src/access.c" left="0" top="320" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="breadcrumb" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/nrf_mesh/examples/myprojects/bc2/deca_driver" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

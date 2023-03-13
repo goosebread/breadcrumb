@@ -23,7 +23,7 @@ extern "C" {
 
 //from autoconfig file
 #define CONFIG_BT_MESH_CHAT_CLI_MESSAGE_LENGTH 90
-#define CONFIG_BT_MESH_CHAT_SAMPLE_PRESENCE_CACHE_SIZE 10
+#define CONFIG_BT_MESH_CHAT_SAMPLE_PRESENCE_CACHE_SIZE 10 //neighbor list size
 
 //from msg.h
 #define BT_MESH_MODEL_OP_LEN(_op) ((_op) <= 0xff ? 1 : (_op) <= 0xffff ? 2 : 3)
@@ -77,12 +77,10 @@ extern "C" {
 #define BT_MESH_CHAT_CLI_OP_MESSAGE_REPLY ACCESS_OPCODE_VENDOR(0x00CC, \
 				       BT_MESH_CHAT_CLI_VENDOR_COMPANY_ID)
 
-/** Presence message opcode. */
-#define BT_MESH_CHAT_CLI_OP_PRESENCE ACCESS_OPCODE_VENDOR(0x00CD, \
+#define BT_MESH_CHAT_CLI_OP_PING ACCESS_OPCODE_VENDOR(0x00CD, \
 				       BT_MESH_CHAT_CLI_VENDOR_COMPANY_ID)
 
-/** Presence get message opcode. */
-#define BT_MESH_CHAT_CLI_OP_PRESENCE_GET ACCESS_OPCODE_VENDOR(0x00CE, \
+#define BT_MESH_CHAT_CLI_OP_PING_REPLY ACCESS_OPCODE_VENDOR(0x00CE, \
 				       BT_MESH_CHAT_CLI_VENDOR_COMPANY_ID)
 /* .. include_endpoint_chat_cli_rst_1 */
 
